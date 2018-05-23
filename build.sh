@@ -13,16 +13,6 @@ fi
 REGISTRY="your registry"
 
 
-
-##
-## create  self signed cert. We don't want to provide real information on cert signature
-if [ ! -f server.key -o ! -f server.crt ]; then
-  openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 \
-    -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=selfsigned.com" \
-    -keyout server.key  -out server.crt
-fi
-
-
 BUILD_TARGET_DIR="`pwd`/target"
 #APP_NAME=$( basename `pwd` | tr '[:upper:]' '[:lower:]' )
 
