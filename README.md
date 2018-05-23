@@ -1,4 +1,4 @@
-![ISaKongf](../../img/isakongf-logo.png)
+![ISaKongf](img/isakongf-logo.png)
 
 
 Templating configuration utility used to setup docker images or Cloud application images. One a 
